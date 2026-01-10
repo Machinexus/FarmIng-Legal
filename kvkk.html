@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmIng - KVKK Aydınlatma Metni</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+            color: #fff;
+            line-height: 1.8;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 40px;
+        }
+        
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #30D158;
+        }
+        
+        header p {
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: rgba(10, 132, 255, 0.2);
+            color: #0A84FF;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+        
+        .back-link:hover {
+            background: rgba(10, 132, 255, 0.3);
+        }
+        
+        .content {
+            background: rgba(28, 28, 30, 0.95);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .content h2 {
+            color: #30D158;
+            margin: 30px 0 15px 0;
+            font-size: 1.5em;
+        }
+        
+        .content h2:first-child {
+            margin-top: 0;
+        }
+        
+        .content h3 {
+            color: #0A84FF;
+            margin: 20px 0 10px 0;
+            font-size: 1.1em;
+        }
+        
+        .content ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .content li {
+            margin-bottom: 8px;
+        }
+        
+        .content p {
+            margin-bottom: 15px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .info-box {
+            background: rgba(48, 209, 136, 0.1);
+            border-left: 4px solid #30D158;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: rgba(255,255,255,0.5);
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Ana Sayfa</a>
+        
+        <header>
+            <h1>📜 KVKK Aydınlatma Metni</h1>
+            <p>Kişisel Verilerin Korunması Hakkında Bilgilendirme</p>
+        </header>
+        
+        <div class="content">
+            <h2>1. Veri Sorumlusu</h2>
+            <p><strong>Enis Atakan Çağırıcı</strong></p>
+            <p>FarmIng Uygulaması Geliştiricisi</p>
+            <p>📧 E-posta: enisatakann@gmail.com</p>
+            
+            <h2>2. İşlenen Kişisel Veriler</h2>
+            
+            <h3>2.1 Kullanıcı Tarafından Sağlanan Veriler</h3>
+            <ul>
+                <li>Takma ad (isteğe bağlı)</li>
+                <li>Quiz cevapları ve öğrenme etkileşimleri</li>
+                <li>İlerleme bilgileri (puan, seviye, başarılar)</li>
+                <li>Kullanıcı tercihleri (ses, titreşim ayarları)</li>
+            </ul>
+            <p>Tüm bu veriler <strong>yalnızca cihazınızda</strong> (AsyncStorage) saklanır ve hiçbir sunucuya gönderilmez.</p>
+            
+            <h3>2.2 Otomatik Olarak Toplanan Veriler</h3>
+            <div class="info-box">
+                <strong>FarmIng hiçbir otomatik veri toplamaz.</strong> Cihaz bilgileri, konum, IP adresi veya kullanım istatistikleri toplanmamaktadır.
+            </div>
+            
+            <h2>3. Kişisel Verilerin İşlenme Amaçları</h2>
+            <p>Kişisel verileriniz aşağıdaki amaçlarla <strong>yalnızca cihazınızda</strong> işlenmektedir:</p>
+            <ul>
+                <li>Uygulama hizmetlerinin sunulması</li>
+                <li>Kullanıcı profilinin oluşturulması (isteğe bağlı takma ad)</li>
+                <li>Öğrenme sürecinin takip edilmesi (quiz sonuçları, puan)</li>
+                <li>Kullanıcı deneyiminin kişiselleştirilmesi</li>
+            </ul>
+            <div class="info-box">
+                <strong>Not:</strong> Hiçbir veri sunucuya gönderilmez veya üçüncü taraflarla paylaşılmaz.
+            </div>
+            
+            <h2>4. Kişisel Verilerin Saklanması ve Güvenliği</h2>
+            <ul>
+                <li>Kişisel veriler yalnızca kullanıcının cihazında saklanmaktadır</li>
+                <li>Veriler, cihazın işletim sistemi tarafından sağlanan güvenli alanlarda tutulur</li>
+                <li>Şu an için kişisel veriler herhangi bir sunucuya aktarılmamaktadır</li>
+                <li>Veri sorumlusu tarafından merkezi bir veri tabanı tutulmamaktadır</li>
+            </ul>
+            
+            <h2>5. Gelecekte Sunulabilecek Hizmetler</h2>
+            <p>İlerleyen dönemlerde hesap senkronizasyonu veya veri yedekleme gibi özelliklerin sunulabilmesi amacıyla bulut tabanlı hizmetler kullanılabilir. Bu durumda:</p>
+            <ul>
+                <li>Kullanıcılar bilgilendirilecektir</li>
+                <li>Bu aydınlatma metni güncellenecektir</li>
+                <li>Kişisel veriler mevzuata uygun şekilde işlenecektir</li>
+            </ul>
+            
+            <h2>6. Kişisel Verilerin Aktarılması</h2>
+            <p>Kişisel verileriniz:</p>
+            <ul>
+                <li>❌ Üçüncü kişilerle paylaşılmaz</li>
+                <li>❌ Satılmaz veya ticari amaçla kullanılmaz</li>
+                <li>❌ Reklam faaliyetlerinde kullanılmaz</li>
+            </ul>
+            <p>Yalnızca kanuni yükümlülükler kapsamında yetkili kurumlara aktarılabilir.</p>
+            
+            <h2>7. Saklama Süresi</h2>
+            <ul>
+                <li>Veriler uygulama yüklü olduğu sürece cihazda saklanır</li>
+                <li>Uygulama silindiğinde tüm veriler kalıcı olarak silinir</li>
+                <li>Kullanıcı, uygulama içinden verilerini sıfırlayabilir</li>
+            </ul>
+            
+            <h2>8. KVKK Kapsamındaki Haklarınız</h2>
+            <p>6698 sayılı Kanun'un 11. maddesi uyarınca kullanıcılar:</p>
+            <ul>
+                <li>Kişisel verilerinin işlenip işlenmediğini öğrenme</li>
+                <li>Kişisel verilere erişme</li>
+                <li>Yanlış veya eksik verilerin düzeltilmesini isteme</li>
+                <li>Verilerin silinmesini veya yok edilmesini talep etme</li>
+                <li>Veri işlemeye itiraz etme</li>
+            </ul>
+            <p>haklarına sahiptir.</p>
+            
+            <h2>9. İletişim</h2>
+            <p>KVKK kapsamındaki talepleriniz için:</p>
+            <p>📧 E-posta: enisatakann@gmail.com</p>
+            
+            <h2>10. Güncellemeler</h2>
+            <p>Bu aydınlatma metni gerekli görüldüğü takdirde güncellenebilir. Güncellemeler uygulama güncellemeleri ile duyurulur.</p>
+            <p style="margin-top: 30px; text-align: right; color: rgba(255,255,255,0.6);">
+                <strong>Son Güncelleme:</strong> 10 Ocak 2026<br>
+                <strong>FarmIng Uygulaması – Sürüm 1.0</strong>
+            </p>
+        </div>
+        
+        <footer>
+            <a href="index.html" style="color: #0A84FF; text-decoration: none;">← Ana Sayfa'ya Dön</a>
+            <p style="margin-top: 20px;">© 2026 FarmIng</p>
+        </footer>
+    </div>
+</body>
+</html>
