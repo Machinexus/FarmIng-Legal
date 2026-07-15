@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Yürü ve Öğren — Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f5f5f7; --card:#fff; --text:#1d1d1f; --muted:#6e6e73; --line:rgba(0,0,0,.09); --accent:#0a84ff; --soft:#eef6ff; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",sans-serif; }
+    main { width:min(820px,calc(100% - 32px)); margin:0 auto; padding:42px 0 72px; }
+    header,article { background:var(--card); border:1px solid var(--line); border-radius:28px; box-shadow:0 18px 50px rgba(0,0,0,.055); }
+    header { padding:42px; }
+    article { margin-top:18px; padding:18px 42px 42px; }
+    .brand { display:inline-flex; padding:7px 11px; border-radius:999px; background:var(--soft); color:var(--accent); font-size:13px; font-weight:700; }
+    h1 { margin:18px 0 8px; font-size:clamp(34px,7vw,58px); line-height:1.05; letter-spacing:-.045em; }
+    h2 { margin:34px 0 10px; font-size:23px; line-height:1.25; letter-spacing:-.025em; }
+    p,li { color:var(--muted); }
+    strong { color:var(--text); }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    nav { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }
+    nav a { padding:9px 13px; border:1px solid var(--line); border-radius:999px; background:var(--card); font-size:14px; font-weight:650; }
+    footer { color:var(--muted); text-align:center; font-size:13px; padding-top:26px; }
+    @media (prefers-color-scheme:dark) { :root { --bg:#000; --card:#1c1c1e; --text:#f5f5f7; --muted:#aeaeb2; --line:rgba(255,255,255,.12); --soft:rgba(10,132,255,.15); } }
+    @media (max-width:600px) { main{width:min(100% - 20px,820px);padding-top:14px} header,article{border-radius:22px} header{padding:28px 24px} article{padding:8px 24px 30px} }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="brand">Yürü ve Öğren · Machine Nexus</span>
+    <h1>Privacy Policy</h1>
+    <p><strong>Last updated:</strong> July 15, 2026</p>
+    <p>Yürü ve Öğren does not sell personal data or use advertising trackers. Your raw walking route remains on your device. Limited profile, progress, and territory data described below is processed through Firebase for online leagues and conquest.</p>
+    <nav><a href="privacy.html">Privacy</a><a href="kvkk.html">KVKK Notice</a><a href="mailto:enisatakann@gmail.com">Contact</a></nav>
+  </header>
+  <article>
+    <h2>1. Controller and contact</h2>
+    <p>Yürü ve Öğren is developed by <strong>Enis Atakan Çağırıcı</strong> under the <strong>Machine Nexus</strong> brand. Contact <a href="mailto:enisatakann@gmail.com">enisatakann@gmail.com</a> for privacy and data requests.</p>
+
+    <h2>2. Data stored on your device</h2>
+    <ul>
+      <li>Raw GPS points, detailed routes, heading, and walking-session history.</li>
+      <li>Learned and unlocked cards, repetitions, XP, diamonds, and achievements.</li>
+      <li>Language, speech, daily-goal, appearance, and sharing preferences.</li>
+      <li>A background-location buffer while a user-started walk is active.</li>
+    </ul>
+    <p>This information is kept in the app’s local storage. It can be removed by resetting progress or uninstalling the app, subject to operating-system backup behavior.</p>
+
+    <h2>3. Online profile and leaderboards</h2>
+    <p>Firebase Authentication creates a persistent anonymous player ID. After onboarding, your display name, region name, avatar seed, and weekly/lifetime totals for steps, distance, sessions, streak, words heard, repetitions, new words, territory, and score are sent to Cloud Firestore to provide profiles and leaderboards.</p>
+    <p>Other players can see your display name, region name, rank, and leaderboard statistics. Your individual card collection and raw route are not made public.</p>
+
+    <h2>4. Location, background walking, and conquest</h2>
+    <p>Location is used only after you start a walk to provide route, distance, pace, heading, and conquest. If you grant permission, location tracking and spoken learning continue while the phone is locked until you finish the walk.</p>
+    <p>Raw GPS routes are not uploaded. When conquest is enabled, the identifier of the approximately 50-metre gameplay cell you visit, visit time, ownership, encounter, and quiz outcome are processed by Firebase Functions and Firestore. Turning off territory-map sharing hides your cell map from the public map but does not stop the conquest server from processing cell identifiers for ownership and conflict rules.</p>
+
+    <h2>5. Information visible to other players</h2>
+    <ul>
+      <li>Display name, region name, weekly/overall rank, and aggregate progress.</li>
+      <li>Captured gameplay-cell boundaries when map sharing is enabled.</li>
+      <li>The owner’s display and region names when another player enters a rival cell.</li>
+    </ul>
+
+    <h2>6. Quiz and learning data</h2>
+    <p>Conquest answers are checked locally. The server receives the challenge ID, question total, score, pass/fail status, language pair, and conquest outcome; the selected-answer sequence is not sent in the current flow. Spoken words use the device operating system’s text-to-speech service.</p>
+
+    <h2>7. Providers and technical data</h2>
+    <p>Online features use Google Firebase Authentication, Cloud Firestore, and Cloud Functions. These services may process the player ID, function name, IP address, and device/OS request metadata in security logs. Map rendering may use Apple Maps on iOS and Google Maps on Android.</p>
+    <p>The app contains no third-party advertising, advertising identifier, cross-app tracking, or separate app analytics SDK. We do not sell personal data.</p>
+
+    <h2>8. Purposes and international processing</h2>
+    <p>Data is processed to provide walking and learning, operate leaderboard and conquest rules, prevent abuse, secure the service, and meet legal obligations. Firebase providers may process data outside Türkiye under applicable service-provider agreements and transfer safeguards.</p>
+
+    <h2>9. Retention and deletion</h2>
+    <p>Local data remains until you reset it or uninstall the app. Online profile, leaderboard, and conquest records remain while your account is active and they are needed for service or security. <strong>Delete account and online data</strong> in Settings removes app-controlled profiles, historical leaderboard entries, conquest and challenge records, region-name claims, and the anonymous account. Provider security logs and backups may remain for their required retention cycles.</p>
+
+    <h2>10. Your choices and rights</h2>
+    <p>You can change Location and Motion &amp; Fitness permissions in system settings, disable public territory-map sharing in the app, and delete your account and online data in Settings. Send access, correction, deletion, or other privacy requests to <a href="mailto:enisatakann@gmail.com">enisatakann@gmail.com</a> with your player name and, where available, player ID.</p>
+
+    <h2>11. Children, security, and updates</h2>
+    <p>The app is not specifically directed to children. Platform permissions, Firebase security rules, and authenticated server operations are used to protect data. We will update this policy when features or processing change and provide notice of material changes in the app.</p>
+  </article>
+  <footer>Yürü ve Öğren Privacy Policy · <a href="mailto:enisatakann@gmail.com">enisatakann@gmail.com</a></footer>
+</main>
+</body>
+</html>
