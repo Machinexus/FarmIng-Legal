@@ -56,6 +56,7 @@
     <h2>4. Location, background walking, and conquest</h2>
     <p>Location is used only after you start a walk to provide route, distance, pace, heading, and conquest. If you grant permission, location tracking and spoken learning continue while the phone is locked until you finish the walk.</p>
     <p>Raw GPS routes are not uploaded. When conquest is enabled, the identifier of the approximately 50-metre gameplay cell you visit, visit time, ownership, encounter, and quiz outcome are processed by Firebase Functions and Firestore. Turning off territory-map sharing hides your cell map from the public map but does not stop the conquest server from processing cell identifiers for ownership and conflict rules.</p>
+    <p>During an active walk, the gameplay-cell identifier derived from precise background location may be used to detect entry into rival territory. If you allow notifications, the device may show a local conquest-quiz notification while the phone is locked. The notification is created on the device; no push-notification token is stored or sent to a server for this feature. Notification permission is optional, and declining it does not prevent walking or spoken learning.</p>
 
     <h2>5. Information visible to other players</h2>
     <ul>
@@ -78,7 +79,7 @@
     <p>Local data remains until you reset it or uninstall the app. Online profile, leaderboard, and conquest records remain while your account is active and they are needed for service or security. <strong>Delete account and online data</strong> in Settings removes app-controlled profiles, historical leaderboard entries, conquest and challenge records, region-name claims, and the anonymous account. Provider security logs and backups may remain for their required retention cycles.</p>
 
     <h2>10. Your choices and rights</h2>
-    <p>You can change Location and Motion &amp; Fitness permissions in system settings, disable public territory-map sharing in the app, and delete your account and online data in Settings. Send access, correction, deletion, or other privacy requests to <a href="mailto:enisatakann@gmail.com">enisatakann@gmail.com</a> with your player name and, where available, player ID.</p>
+    <p>You can change Location, Motion &amp; Fitness, and notification permissions in system settings, disable public territory-map sharing in the app, and delete your account and online data in Settings. Send access, correction, deletion, or other privacy requests to <a href="mailto:enisatakann@gmail.com">enisatakann@gmail.com</a> with your player name and, where available, player ID.</p>
 
     <h2>11. Children, security, and updates</h2>
     <p>The app is not specifically directed to children. Platform permissions, Firebase security rules, and authenticated server operations are used to protect data. We will update this policy when features or processing change and provide notice of material changes in the app.</p>
