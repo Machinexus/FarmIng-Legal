@@ -46,20 +46,21 @@
       <li><strong>Konum ve fitness:</strong> ham rota (cihazda), yaklaşık 50 metrelik fetih hücresi, ziyaret zamanı, adım, mesafe, süre, tempo ve yön.</li>
       <li><strong>Öğrenme ve oyun:</strong> dil çifti, kelime/tekrar toplamları, XP, elmas, başarımlar, quiz puanı/sonucu, fetih sahipliği ve geri alma kayıtları.</li>
       <li><strong>İşlem güvenliği:</strong> IP adresi, Firebase çağrı bilgisi, cihaz/işletim sistemi ve hata/güvenlik kayıtları.</li>
-      <li><strong>Tercihler:</strong> konum, harita paylaşımı, seslendirme, görünüm ve günlük hedef ayarları.</li>
+      <li><strong>Tercihler:</strong> konum, bildirim, harita paylaşımı, seslendirme, görünüm ve günlük hedef ayarları.</li>
     </ul>
 
     <h2>3. İşleme amaçları</h2>
     <ul>
       <li>Yürüyüş, rota, tempo, yön ve sesli öğrenme seansını çalıştırmak.</li>
       <li>Haftalık/genel lig, profil, bölge sahipliği, karşılaşma ve fetih quizini yürütmek.</li>
+      <li>Aktif yürüyüşte rakip bölge girişini belirlemek ve izin verilmişse fetih quiz teklifini cihazda yerel bildirim olarak göstermek.</li>
       <li>İlerlemeyi cihazda saklamak ve kullanıcı tercihlerini uygulamak.</li>
       <li>Hileyi veya kötüye kullanımı önlemek, güvenliği sağlamak ve teknik sorunları çözmek.</li>
       <li>İlgili kişi taleplerini ve hukuki yükümlülükleri yerine getirmek.</li>
     </ul>
 
     <h2>4. Toplama yöntemi ve hukuki sebepler</h2>
-    <p>Veriler; mobil uygulama arayüzü, cihaz konum ve hareket sensörleri, Firebase anonim kimlik doğrulaması ve çevrimiçi işlev çağrıları aracılığıyla tamamen veya kısmen otomatik yöntemlerle elde edilir.</p>
+    <p>Veriler; mobil uygulama arayüzü, cihaz konum ve hareket sensörleri, işletim sisteminin yerel bildirim arayüzü, Firebase anonim kimlik doğrulaması ve çevrimiçi işlev çağrıları aracılığıyla tamamen veya kısmen otomatik yöntemlerle elde edilir.</p>
     <p>İşleme faaliyetleri, niteliğine göre sözleşmenin kurulması veya ifası (KVKK m.5/2-c), veri sorumlusunun hukuki yükümlülüğü (m.5/2-ç), ilgili kişinin temel haklarına zarar vermemek kaydıyla meşru menfaat (m.5/2-f) ve gerekli olduğu hallerde ayrı açık rıza dayanaklarına göre yürütülür. İsteğe bağlı kesin bölge haritası paylaşımı uygulamadaki anahtarla yönetilir ve geri alınabilir.</p>
 
     <h2>5. Aktarım ve alıcı grupları</h2>
@@ -68,6 +69,7 @@
 
     <h2>6. Konumun kullanımı ve diğer kullanıcılara açıklanan bilgiler</h2>
     <p>Konum yalnız kullanıcı bir yürüyüş başlattığında rota, mesafe, tempo, yön ve fetih için kullanılır. İzin verilirse aktif yürüyüş telefon kilitliyken sürer ve yürüyüş bitirildiğinde arka plan takibi durur. Ham GPS rotası sunucuya yüklenmez. Fetih için yaklaşık 50 metrelik hücre kodu, ziyaret zamanı ve sahiplik/karşılaşma kaydı işlenir.</p>
+    <p>Aktif yürüyüşte hassas arka plan konumundan üretilen oyun hücresi kodu rakip bölge girişini belirlemek için kullanılabilir. Bildirim izni verilmişse fetih quiz teklifi telefon kilitliyken cihazda yerel bildirim olarak gösterilebilir. Bu özellik için push bildirim tokenı saklanmaz veya sunucuya iletilmez; bildirim izni isteğe bağlıdır.</p>
     <p>Görünen ad, bölge adı, lig sırası ve toplu ilerleme değerleri lig veya profil ekranlarında gösterilir. Harita paylaşımı açıksa ele geçirilen hücre sınırları görünür. Bir oyuncu rakip hücreye girdiğinde alan sahibinin görünen adı ve bölge adı gösterilebilir. Ham GPS rotası ve tek tek kart koleksiyonu paylaşılmaz.</p>
 
     <h2>7. Saklama ve imha</h2>
@@ -85,7 +87,7 @@
     <p>Başvurunu görünen oyuncu adını ve mümkünse oyuncu kimliğini belirterek <a href="mailto:enisatakann@gmail.com">enisatakann@gmail.com</a> adresine iletebilirsin. Başvurular niteliğine göre en kısa sürede ve en geç 30 gün içinde sonuçlandırılır.</p>
 
     <h2>9. Tercihler ve güncellemeler</h2>
-    <p>Konum ve Hareket/Fitness izinleri cihaz ayarlarından, bölge haritası paylaşımı uygulama ayarlarından değiştirilebilir. Hesap ve çevrimiçi veri silme işlemi uygulama içinden başlatılabilir. İşleme amaçları veya veri akışı değişirse bu aydınlatma metni veri işleme başlamadan önce güncellenir.</p>
+    <p>Konum, Hareket/Fitness ve bildirim izinleri cihaz ayarlarından, bölge haritası paylaşımı uygulama ayarlarından değiştirilebilir. Bildirim izninin verilmemesi yürüyüş ve sesli öğrenme işlevlerini engellemez. Hesap ve çevrimiçi veri silme işlemi uygulama içinden başlatılabilir. İşleme amaçları veya veri akışı değişirse bu aydınlatma metni veri işleme başlamadan önce güncellenir.</p>
   </article>
   <footer>Yürü ve Öğren KVKK Aydınlatma Metni · <a href="mailto:enisatakann@gmail.com">enisatakann@gmail.com</a></footer>
 </main>
