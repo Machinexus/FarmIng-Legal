@@ -32,7 +32,7 @@
   <header>
     <span class="brand">Yürü ve Öğren · Machine Nexus</span>
     <h1>KVKK Aydınlatma Metni</h1>
-    <p><strong>Son güncelleme:</strong> 15 Temmuz 2026</p>
+    <p><strong>Son güncelleme:</strong> 22 Temmuz 2026</p>
     <p>Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu’nun 10. maddesi kapsamında Yürü ve Öğren’de işlenen kişisel veriler hakkında aydınlatma amacı taşır.</p>
     <nav><a href="index.html">Uygulama</a><a href="privacy.html">Privacy</a><a href="kvkk.html">KVKK</a><a href="mailto:enisatakann@gmail.com">İletişim</a></nav>
   </header>
@@ -45,6 +45,7 @@
       <li><strong>Kimlik/profil:</strong> Firebase anonim oyuncu kimliği, görünen ad, bölge adı ve avatar anahtarı.</li>
       <li><strong>Konum ve fitness:</strong> ham rota (cihazda), yaklaşık 50 metrelik fetih hücresi, ziyaret zamanı, adım, mesafe, süre, hız ve yön.</li>
       <li><strong>Öğrenme ve oyun:</strong> dil çifti, kelime/tekrar toplamları, XP, elmas, başarımlar, quiz puanı/sonucu, fetih sahipliği ve geri alma kayıtları.</li>
+      <li><strong>Topluluk güvenliği:</strong> bölge adı, normalleştirilmiş ad, moderasyon durumu ve risk etiketleri, bildirim kategorisi, isteğe bağlı kısa not, bildiren/bildirilen anonim oyuncu kimlikleri ve denetim kayıtları.</li>
       <li><strong>İşlem güvenliği:</strong> IP adresi, Firebase çağrı bilgisi, cihaz/işletim sistemi ve hata/güvenlik kayıtları.</li>
       <li><strong>Tercihler:</strong> konum, bildirim, harita paylaşımı, seslendirme, görünüm ve günlük hedef ayarları.</li>
     </ul>
@@ -56,6 +57,7 @@
       <li>Aktif yürüyüşte rakip bölge girişini belirlemek ve izin verilmişse fetih quiz teklifini cihazda yerel bildirim olarak göstermek.</li>
       <li>İlerlemeyi cihazda saklamak ve kullanıcı tercihlerini uygulamak.</li>
       <li>Hileyi veya kötüye kullanımı önlemek, güvenliği sağlamak ve teknik sorunları çözmek.</li>
+      <li>Kullanıcıların oluşturduğu bölge adlarını denetlemek; bildirim, gizleme ve engelleme tercihlerini uygulamak.</li>
       <li>İlgili kişi taleplerini ve hukuki yükümlülükleri yerine getirmek.</li>
     </ul>
 
@@ -71,9 +73,10 @@
     <p>Konum yalnız kullanıcı bir yürüyüş başlattığında rota, mesafe, hız, yön ve fetih için kullanılır. İzin verilirse aktif yürüyüş telefon kilitliyken sürer ve yürüyüş bitirildiğinde arka plan takibi durur. Ham GPS rotası sunucuya yüklenmez. Fetih için yaklaşık 50 metrelik hücre kodu, ziyaret zamanı ve sahiplik/karşılaşma kaydı işlenir.</p>
     <p>Aktif yürüyüşte hassas arka plan konumundan üretilen oyun hücresi kodu rakip bölge girişini belirlemek için kullanılabilir. Bildirim izni verilmişse fetih quiz teklifi telefon kilitliyken cihazda yerel bildirim olarak gösterilebilir. Bu özellik için push bildirim tokenı saklanmaz veya sunucuya iletilmez; bildirim izni isteğe bağlıdır.</p>
     <p>Görünen ad, bölge adı, lig sırası ve toplu ilerleme değerleri lig veya profil ekranlarında gösterilir. Harita paylaşımı açıksa ele geçirilen hücre sınırları görünür. Bir oyuncu rakip hücreye girdiğinde alan sahibinin görünen adı ve bölge adı gösterilebilir. Ham GPS rotası ve tek tek kart koleksiyonu paylaşılmaz.</p>
+    <p>Bölge adı bildirimlerine kesin GPS koordinatı, ev adresi veya ham rota eklenmez. Gerekli olduğunda moderatöre yalnızca yaklaşık oyun hücresi gösterilir. Gizleme ve engelleme tercihleri diğer kullanıcıya açıklanmaz ve alan sahipliğini değiştirmez.</p>
 
     <h2>7. Saklama ve imha</h2>
-    <p>Yerel veriler uygulama sıfırlanana veya kaldırılana kadar; çevrimiçi kayıtlar hesap aktif olduğu ve hizmet, güvenlik veya hukuki yükümlülük için gerektiği süre boyunca saklanır. Ayarlar’daki <strong>Hesabı ve çevrimiçi verileri sil</strong> işlemi uygulamanın kontrolündeki profil, geçmiş lig, fetih, challenge, bölge adı ve anonim hesap verilerini siler. Hizmet sağlayıcı güvenlik kayıtları ve yedekler kendi zorunlu saklama döngülerine tabi olabilir.</p>
+    <p>Yerel veriler uygulama sıfırlanana veya kaldırılana kadar; çevrimiçi kayıtlar hesap aktif olduğu ve hizmet, güvenlik veya hukuki yükümlülük için gerektiği süre boyunca saklanır. Ayarlar’daki <strong>Hesabı ve çevrimiçi verileri sil</strong> işlemi uygulamanın kontrolündeki profil, geçmiş lig, fetih, challenge, bölge adı, bildirim ve özel gizle/engelle tercihlerini siler; başka kayıtlarda kalan bildiren kimliği kaldırılır veya anonimleştirilir. Hizmet sağlayıcı güvenlik kayıtları ve yedekler kendi zorunlu saklama döngülerine tabi olabilir.</p>
 
     <h2>8. KVKK m.11 kapsamındaki haklar</h2>
     <ul>
